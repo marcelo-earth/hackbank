@@ -82,10 +82,10 @@ function About({ navigation }) {
             <Text style={styles.titlePage}>¡Hola! Bienvenid@ a Hackbank.</Text>
 
             <Text style={styles.paragraphPage}>
-              Hackbank (Versión Beta) es una app que te ayudará a predecir cómo
+              Hackbank es una app que te ayudará a predecir cómo
               se comportará una transacción entre dos bancos. Por ahora sólo
               está disponible en las cuentas básicas de los 4 bancos principales
-              de Perú. Próximamente podrá soportar más cuentas y más bancos.
+              de Perú.
             </Text>
 
             <Text style={styles.paragraphPage}>
