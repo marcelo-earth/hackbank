@@ -281,3 +281,7 @@ pc-api*.json
 
 # Web Build Folder
 web-build/
+
+# Context Ignore
+.cursor/*
+.github/instructions/*
