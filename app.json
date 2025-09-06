@@ -3,7 +3,7 @@
     "name": "Hackbank",
     "slug": "Hackbank",
     "description": "An app that allows you to simulate an interbank transfer.",
-    "version": "1.0.3",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,14 +15,25 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-notifications"
+    ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "io.hackbank.app"
+      "supportsTablet": false,
+      "bundleIdentifier": "com.astronware.hackbank",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "entitlements": {
+        "aps-environment": "production"
+      }
     },
     "android": {
-      "package": "io.hackbank.app",
-      "versionCode": 4,
+      "package": "com.astronware.hackbank",
+      "versionCode": 10,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#006C4B"
@@ -30,6 +41,12 @@
     },
     "web": {
       "favicon": "./assets/icon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f9041dfe-67bc-4cb2-b908-4e465da982c3"
+      }
+    },
+    "owner": "astronware"
   }
 }

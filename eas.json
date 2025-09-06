@@ -1,6 +1,6 @@
 {
   "cli": {
-    "version": ">= 0.54.1"
+    "version": ">= 3.0.0"
   },
   "build": {
     "development": {
@@ -12,17 +12,25 @@
         "buildType": "apk"
       }
     },
-    "preview2": {
+    "production": {
+      "ios": {
+        "resourceClass": "default"
+      },
       "android": {
-        "gradleCommand": ":app:assembleRelease"
+        "resourceClass": "default"
       }
-    },
-    "preview3": {
-      "developmentClient": true
-    },
-    "production": {}
+    }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appleId": "team@astronware.com",
+        "ascAppId": "6751608426"
+      },
+      "android": {
+        "serviceAccountKeyPath": "./path-to-service-account-key.json",
+        "track": "production"
+      }
+    }
   }
 }
