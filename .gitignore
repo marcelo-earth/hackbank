@@ -285,3 +285,6 @@ web-build/
 # Context Ignore
 .cursor/*
 .github/instructions/*
+
+# Ignore important files
+*.p8

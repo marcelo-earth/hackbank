@@ -125,7 +125,7 @@ function About({ navigation }) {
             <Pressable
               title="Código fuente"
               onPress={() => {
-                handleURL('https://github.com/360macky/hackbank', 'url');
+                handleURL('https://github.com/marcelo-earth/hackbank', 'url');
               }}
               accesibilityLabel="Código fuente"
               style={({ pressed }) => [
